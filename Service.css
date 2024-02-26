@@ -1,0 +1,105 @@
+.services{
+  height: 100vh;
+  margin: 0 1rem 0 1rem;
+}
+
+.services h1{
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+.services h1:hover {
+  transform: translateY(10px);
+}
+
+.services p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.serviceType{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.containerServices{
+  text-align: center;
+}
+
+.titleServices{
+  text-align: center;
+}
+
+.columnServices {
+  margin-top: 2rem;
+  float: left;
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  transition: all 0.3s;
+}
+
+.columnServices:hover {
+  transform: translateY(10px);
+}
+
+
+.cardServices{
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.cardServices:hover{
+  border-color: #1d39c4;
+ }
+
+.cardServices img{
+  width: 80%;
+  height: 25vh;
+  margin: 1rem auto;
+  display: block;
+}
+
+.containerServices {
+  padding: 0 16px;
+}
+
+.containerServices::after, .rowServices::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titleServices {
+  color: grey;
+}
+
+.buttonServices {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.buttonServices:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .columnServices{
+    width: 100%;
+    display: block;
+  }
+}
